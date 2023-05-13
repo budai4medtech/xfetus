@@ -21,4 +21,6 @@ Intelligence/Machine Learning (AI/ML)-Based Software as a Medical Device
 (SaMD) 
 https://www.fda.gov/files/medical%20devices/published/US-FDA-Artificial-Intelligence-and-Machine-Learning-Discussion-Paper.pdf 
 
+>  AnimalGAN Initiative: Initiative to develop virtual animal models to simulate animal study results using AI.
+https://www.fda.gov/about-fda/nctr-research-focus-areas/animalgan-initiative
 

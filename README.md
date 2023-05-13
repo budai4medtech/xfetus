@@ -3,7 +3,7 @@ Prototyping Good AL/ML practices for Medical Image Synthesis
 </h1>
 <div align="center">
 
-Harvey Mannering, Sofia Miñano, and Miguel Xochicale, University College London
+Harvey Mannering, Sofia Miñano, and Miguel Xochicale, University College London    
 Journal club of deep learning and computer vision at Advance Computer Centre.    
 31st of May 2023
 </div>
