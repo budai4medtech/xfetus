@@ -1,0 +1,33 @@
+# Ignored paths and directories
+## pycharm project path
+.idea
+
+## ignore datapaths 
+**/data/experiments
+
+## temporal __pycache__/
+**/__pycache__/
+
+## .ipynb_checkpoints/
+**/.ipynb_checkpoints
+
+## ignores vim temporal files
+**/*.swp
+
+## ignores drawing-v**.png files
+**/drawing-v**.png
+
+## temporal files for local tex build
+**/*.aux
+**/*.fdb_latexmk
+**/*.fls
+**/*.log
+**/*.nav
+**/main.pdf
+**/*.snm
+**/*.synctex.gz
+**/*.toc
+**/_minted-main
+**/*.blg
+**/*.out
+**/comment.cut
