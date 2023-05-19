@@ -1,5 +1,5 @@
 <h1 align="center">:page_facing_up: 
-Prototyping Good AL/ML practices for Medical Image Synthesis
+Good practices in AI/ML for Medical Image Synthesis
 </h1>
 <div align="center">
 
@@ -9,6 +9,10 @@ Journal club of deep learning and computer vision at Advance Computer Centre.
 </div>
 
 ## Abstract
+Total product lifecycle aligned with regulatory FDA's approach suggest to follow AI/ML workflows
+as well as align results with checklist for artificial intelligence in medical imaging (CLAIM).
+This talk will cover essentials to train reliable, repeatable, reproducible and validted models for medical image synthesis.
+We are also going to showcase uses cases for fetal brain ultrasound image sysntehsis using UCL miriad server.
 
 
 ## Clone repository
