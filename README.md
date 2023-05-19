@@ -3,10 +3,12 @@ Good practices in AI/ML for Medical Image Synthesis
 </h1>
 <div align="center">
 
-Harvey Mannering, Sofia Miñano, and Miguel Xochicale, University College London    
+Harvey Mannering, Sofia Miñano, and Miguel Xochicale    
 
-The deep learning and computer vision Journal Club \\ 
-UCL Centre for Advance Research Computing 
+
+University College London    
+The deep learning and computer vision Journal Club     
+UCL Centre for Advance Research Computing     
 31st of May 2023
 </div>
 
