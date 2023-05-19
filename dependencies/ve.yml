@@ -1,0 +1,43 @@
+## USAGE
+## cd ../dependencies
+## conda update -n base -c defaults conda  ## UPDATE CONDA
+## conda list -n *VE # show list of installed packages
+## conda env create -f *ve.yml   		    ## INSTALL
+## conda env update -f *ve.yml --prune  	## UPDATE
+## conda activate *VE			    ## ACTIVATE
+## conda remove -n *VE --all   ## REMOVE
+
+## QUICK TEST OF THE AVAILABILITY OF CUDA
+## conda activate *VE
+## python
+## import torch
+## torch.cuda.is_available()
+##
+## Alternatively
+## conda activate *VE
+## python packages_versions.py
+
+name: medisynVE
+channels:
+  - pytorch # https://anaconda.org/pytorch/torchvision
+  - nvidia
+  - conda-forge
+dependencies:
+  - pytorch
+  - torchvision
+  - torchinfo
+  - python #WORKS for 3.11 and 3.10
+  - cudatoolkit
+  - pip
+  - pip:
+    - matplotlib
+    - numpy
+    - notebook
+    - jupytext
+    - jupyter
+    - jupyter_contrib_nbextensions
+    - scikit-image
+    - datasets
+    - diffusers
+    - seaborn 
+    - pillow
