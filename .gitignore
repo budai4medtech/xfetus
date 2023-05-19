@@ -23,7 +23,7 @@
 **/*.fls
 **/*.log
 **/*.nav
-**/main.pdf
+**/slides**.pdf
 **/*.snm
 **/*.synctex.gz
 **/*.toc
