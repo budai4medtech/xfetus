@@ -5,24 +5,11 @@ Good practices in AI/ML for Medical Image Synthesis
 
 Harvey Mannering, Sofia Miñano, and Miguel Xochicale    
 
-
 University College London    
 The deep learning and computer vision Journal Club     
 UCL Centre for Advance Research Computing     
 31st of May 2023
 </div>
-
-## Abstract
-Medical Image Synthesis has been making great progress since the publication of generative models and the most recent diffusion models.
-In this talk, I will provide background on applications for medical image synthesis e.g. classification, augmentation, segmentration, registration and other downstreams tasks, etc.
-Similarly, I will overview the balance between GANS, VANs and Diffusion models and cover implemenation workflows following good practices and FDA guidelines, aiming to provide understanding of essentials to train reliable, repeatable, reproducible and validted models for medical image synthesis.
-Particularly, I will discuss an ML workflow for fetal brain ultrasound image sysntehsis, and its quality image assemsment (visual turing test and FID scores).
-Finally, I will present a quick prototype in github, google-colabs and guidelines to train it using myriam server.
-
-## Tutorial
-* Google colabs 
-* Quick guidelines and demos for myriad
-	* How to run and re-train in myriad
 
 
 ## Clone repository
