@@ -28,3 +28,7 @@ https://www.fda.gov/about-fda/nctr-research-focus-areas/animalgan-initiative
 > Collins, Gary S., Johannes B. Reitsma, Douglas G. Altman, and Karel GM Moons. "Transparent reporting of a multivariable prediction model for individual prognosis or diagnosis (TRIPOD): the TRIPOD statement." Annals of internal medicine 162, no. 1 (2015): 55-63. Doi https://doi.org/10.7326/M14-0697 http://www.tripod-statement.org/
 
 > Mongan, John, Linda Moy, and Charles E. Kahn Jr. "Checklist for artificial intelligence in medical imaging (CLAIM): a guide for authors and reviewers." Radiology: Artificial Intelligence 2, no. 2 (2020): e200029
+
+> Artrith, Nongnuch, Keith T. Butler, François-Xavier Coudert, Seungwu Han, Olexandr Isayev, Anubhav Jain, and Aron Walsh. "Best practices in machine learning for chemistry." Nature chemistry 13, no. 6 (2021): 505-508. https://scholar.google.com/scholar?cites=14276612770323165141&as_sdt=2005&sciodt=0,5&hl=en 
+
+
