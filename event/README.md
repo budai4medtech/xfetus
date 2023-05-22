@@ -1,6 +1,6 @@
 
 ## Title:
-Towards Realistic Ultrasound Fetal Brain Imaging Synthesis
+Good practices in AI/ML for Ultrasound Fetal Brain Imaging Synthesis
 
 ## Abstract:
 Medical image datasets for AI and ML methods must be diverse (i.e. diagnoses, diseases, pathologies, scanners, demographics, etc).
