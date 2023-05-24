@@ -1,28 +1,23 @@
-<h1 align="center">:page_facing_up: 
-Good practices in AI/ML for Medical Image Synthesis
+<h1 align="center">
+Good practices in AI/ML for Ultrasound Fetal Brain Imaging Synthesis
 </h1>
 <div align="center">
 
 Harvey Mannering, Sofia Miñano, and Miguel Xochicale    
 
-
 University College London    
 The deep learning and computer vision Journal Club     
 UCL Centre for Advance Research Computing     
-31st of May 2023
+1st of June 2023, 15:00 GMT
 </div>
 
 ## Abstract
-Medical Image Synthesis has been making great progress since the publication of generative models and the most recent diffusion models.
-In this talk, I will provide background on applications for medical image synthesis e.g. classification, augmentation, segmentration, registration and other downstreams tasks, etc.
-Similarly, I will overview the balance between GANS, VANs and Diffusion models and cover implemenation workflows following good practices and FDA guidelines, aiming to provide understanding of essentials to train reliable, repeatable, reproducible and validted models for medical image synthesis.
-Particularly, I will discuss an ML workflow for fetal brain ultrasound image sysntehsis, and its quality image assemsment (visual turing test and FID scores).
-Finally, I will present a quick prototype in github, google-colabs and guidelines to train it using myriam server.
-
-## Tutorial
-* Google colabs 
-* Quick guidelines and demos for myriad
-	* How to run and re-train in myriad
+Medical image datasets for AI and ML methods must be diverse to generalise well unseen data (i.e. diagnoses, diseases, pathologies, scanners, demographics, etc).
+However there are few public ultrasound fetal imaging datasets due to insufficient amounts of clinical data, patient privacy, rare occurrence of abnormalities, and limited experts for data collection and validation.
+To address such challenges in Ultrasound Medical Imaging, Miguel will discuss two proposed generative adversarial networks (GAN)-based models: diffusion-super-resolution-GAN and transformer-based-GAN, to synthesise images of fetal Ultrasound brain image planes from one public dataset.
+Similarly, Miguel will present and discuss AI and ML workflow aligned to good ML practices by FDA, and methods for quality image assessment (e.g., visual Turing test and FID scores).
+Finally, a simple prototype in GitHub, google-colabs and guidelines to train it using Myriad cluster will be presented as well as applications for Medical Image Synthesis e.g., classification, augmentation, segmentation, registration and other downstream tasks, etc. will be discussed.
+The resources to reproduce the work of this talk are available at https://github.com/mxochicale/medisynth.
 
 
 ## Clone repository
@@ -30,7 +25,7 @@ Finally, I will present a quick prototype in github, google-colabs and guideline
 * Clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
 ```
 cd && mkdir -p $HOME/repositories/mxochicale && cd  $HOME/repositories/mxochicale
-git clone git@github.com:mxochicale/prototyping-pipelines-for-medical-image-synthesis.git
+git clone git@github.com:mxochicale/medisynth.git
 ```
 
 
@@ -59,8 +54,8 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 			<sub> <b>Sofia Miñano</b> </sub>        
 		</a>
 		<br />
-			<a href="https://github.com/mxochicale/prototyping-pipelines-for-medical-image-synthesis/commits?author=sfmig" title="Code">💻</a> 
-			<a href="https://github.com/mxochicale/prototyping-pipelines-for-medical-image-synthesis/commits?author=sfmig" title="Research">  🔬 🤔  </a>
+			<a href="https://github.com/mxochicale/medisynth/commits?author=sfmig" title="Code">💻</a> 
+			<a href="https://github.com/mxochicale/medisynth/commits?author=sfmig" title="Research">  🔬 🤔  </a>
 	</td>
 	<!-- CONTRIBUTOR -->
 	<td align="center">
@@ -69,8 +64,8 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 			<sub> <b>Harvey Mannering</b> </sub>        
 		</a>
 		<br />
-			<a href="https://github.com/mxochicale/prototyping-pipelines-for-medical-image-synthesis/commits?author=harveymannering" title="Code">💻</a> 
-			<a href="https://github.com/mxochicale/prototyping-pipelines-for-medical-image-synthesis/commits?author=harveymannering" title="Research">  🔬 🤔  </a>
+			<a href="https://github.com/mxochicale/medisynth/commits?author=harveymannering" title="Code">💻</a> 
+			<a href="https://github.com/mxochicale/medisynth/commits?author=harveymannering" title="Research">  🔬 🤔  </a>
 	</td>
 	<!-- CONTRIBUTOR -->
 	<td align="center">
@@ -79,8 +74,8 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 			<sub><b>Miguel Xochicale</b></sub>          
 			<br />
 		</a>
-			<a href="https://github.com/mxochicale/prototyping-pipelines-for-medical-image-synthesis/commits?author=mxochicale" title="Code">💻</a> 
-			<a href="ttps://github.com/mxochicale/prototyping-pipelines-for-medical-image-synthesis/commits?author=mxochicale" title="Documentation">📖  🔧 </a>
+			<a href="https://github.com/mxochicale/medisynth/commits?author=mxochicale" title="Code">💻</a> 
+			<a href="ttps://github.com/mxochicale/medisynth/commits?author=mxochicale" title="Documentation">📖  🔧 </a>
 	</td>
   </tr>
 </table>
