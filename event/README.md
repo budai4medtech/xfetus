@@ -3,12 +3,12 @@
 Good practices in AI/ML for Ultrasound Fetal Brain Imaging Synthesis
 
 ## Abstract:
-Medical image datasets for AI and ML methods must be diverse to be able to generalise well to unseen new data (i.e. diagnoses, diseases, pathologies, scanners, demographics, etc).
+Medical image datasets for AI and ML methods must be diverse to generalise well unseen data (i.e. diagnoses, diseases, pathologies, scanners, demographics, etc).
 However there are few public ultrasound fetal imaging datasets due to insufficient amounts of clinical data, patient privacy, rare occurrence of abnormalities, and limited experts for data collection and validation.
-To address such challenges in Medical Imaging, Miguel will discuss two proposed generative adversarial networks (GAN)-based models: diffusion-super-resolution-GAN and transformer-based-GAN, to synthesise images of fetal ultrasound brain planes from one public dataset.
-Similarly, Miguel will present and discuss ML workflow aligned to good ML practices by FDA, and methods for quality image assessment (e.g., visual Turing test and FID scores).
-Finally, a simple prototype in GitHub, google-colabs and guidelines to train it using Myriad cluster will presented, and applications for Medical Image Synthesis e.g., classification, augmentation, segmentation, registration and other downstream tasks, etc. will be discussed.
-
+To address such challenges in Ultrasound Medical Imaging, Miguel will discuss two proposed generative adversarial networks (GAN)-based models: diffusion-super-resolution-GAN and transformer-based-GAN, to synthesise images of fetal Ultrasound brain image planes from one public dataset.
+Similarly, Miguel will present and discuss AI and ML workflow aligned to good ML practices by FDA, and methods for quality image assessment (e.g., visual Turing test and FID scores).
+Finally, a simple prototype in GitHub, google-colabs and guidelines to train it using Myriad cluster will be presented as well as applications for Medical Image Synthesis e.g., classification, augmentation, segmentation, registration and other downstream tasks, etc. will be discussed.
+The resources to reproduce the work of this talk are available at https://github.com/mxochicale/medisynth.
 
 
 ## Keywords:
