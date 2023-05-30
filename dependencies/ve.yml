@@ -30,14 +30,17 @@ dependencies:
   - cudatoolkit
   - pip
   - pip:
-    - matplotlib
     - numpy
+    - matplotlib
+    - opencv-python
+    - wandb
+    - tqdm
     - notebook
-    - jupytext
     - jupyter
-    - jupyter_contrib_nbextensions
+    - seaborn 
     - scikit-image
+    - pillow
     - datasets
     - diffusers
-    - seaborn 
-    - pillow
+    - torchmetrics
+    - monai
