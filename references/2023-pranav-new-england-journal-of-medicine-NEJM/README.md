@@ -26,7 +26,7 @@ https://scholar.google.com/citations?user=z1UtMSYAAAAJ&hl=en&oi=sra
 ## Notes
 
 
-Few paragraphs form the actual text of the paper!
+Few paragraphs and references from the actual text of the paper!
 ```
 Safeguards for Effective
 In considering the widespread adoption of AI algorithms in radiology, a critical question arises: 
