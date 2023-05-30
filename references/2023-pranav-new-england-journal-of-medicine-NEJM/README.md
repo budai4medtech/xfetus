@@ -48,12 +48,18 @@ These checks encompass three related areas: clinician–AI collaboration, transp
 39. Plana D, Shung DL, Grimshaw AA, Saraf A, Sung JJY, Kann BH. 
 Randomized clinical trials of machine learning interventions in health care: a systematic review. 
 JAMA Netw Open 2022;5(9):e2233946-e2233946.
-https://scholar.google.com/scholar_lookup?hl=en&volume=5&publication_year=2022&pages=e2233946-e2233946&issue=9&author=D+Planaauthor=DL+Shungauthor=AA+Grimshawauthor=A+Sarafauthor=JJY+Sungauthor=BH+Kann&title=Randomized+clinical+trials+of+machine+learning+interventions+in+health+care%3A+a+systematic+review.&pmid=36173632
+https://scholar.google.com/scholar?cites=11739939766908299689&as_sdt=2005&sciodt=0,5&hl=en
+
+49. Guan H, Liu M. Domain adaptation for medical image analysis: a survey. 
+IEEE Trans Biomed Eng 2022;69:1173-1185.
+https://scholar.google.com/scholar?cites=3390936358219598617&as_sdt=2005&sciodt=0,5&hl=en
 
 
-49. Guan H, Liu M. Domain adaptation for medical image analysis: a survey. IEEE Trans Biomed Eng 2022;69:1173-1185.
 50. Castro DC, Walker I, Glocker B. Causality matters in medical imaging. Nat Commun
-51. Feng Y, Xu X, Wang Y, et al. Deep supervised domain adaptation for pneumonia diagnosis from chest X-ray images. IEEE J Biomed Health Inform 2022;26:1080-1090.
+
+51. Feng Y, Xu X, Wang Y, et al. 
+Deep supervised domain adaptation for pneumonia diagnosis from chest X-ray images. 
+IEEE J Biomed Health Inform 2022;26:1080-1090.
 
 
 Transparency
