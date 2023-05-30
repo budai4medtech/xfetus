@@ -101,7 +101,8 @@ continual learning can help maintain model performance over time.78
 In addition, incorporating
 feedback from clinicians can help improve the
 performance of the model by providing realworld insights and 
-identifying areas for improvement. Ultimately, postdeployment monitoring is essential to ensure that AI models remain
+identifying areas for improvement. 
+Ultimately, postdeployment monitoring is essential to ensure that AI models remain
 effective and reliable in clinical settings.79,80
 
 
