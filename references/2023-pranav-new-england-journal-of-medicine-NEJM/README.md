@@ -26,14 +26,22 @@ https://scholar.google.com/citations?user=z1UtMSYAAAAJ&hl=en&oi=sra
 ## Notes
 
 
-
+Few paragraphs form the actual text of the paper!
 ```
-
-
 Safeguards for Effective
-In considering the widespread adoption of AI algorithms in radiology, a critical question arises: Will they work for all patients? The models underlying specific AI applications are often not tested outside the setting in which they were trained, and even AI systems that receive FDA approval are rarely tested prospectively or in multiple clinical settings.38 Very few randomized, controlled trials have shown the safety and effectiveness of existing AI algorithms in radiology, and the lack of real-world evaluation of AI systems can pose a substantial risk to patients and clinicians.39
+In considering the widespread adoption of AI algorithms in radiology, a critical question arises: 
+Will they work for all patients? The models underlying specific AI applications are often not tested 
+outside the setting in which they were trained, and even AI systems 
+that receive FDA approval are rarely tested prospectively or in multiple clinical settings.38 
+Very few randomized, controlled trials have shown the safety and effectiveness of 
+existing AI algorithms in radiology, and the lack of real-world evaluation of 
+AI systems can pose a substantial risk to patients and clinicians.39
 
-There is a pressing need for the development of methods that improve the generalization of algorithms in new settings.49-51 As the field matures, better generalization checks based on accepted standards must be established before the algorithms are widely applied. These checks encompass three related areas: clinician–AI collaboration, transparency, and monitoring (Figure 2).
+There is a pressing need for the development of methods that improve the generalization of algorithms 
+in new settings.49-51 
+As the field matures, better generalization checks based on accepted standards must be established 
+before the algorithms are widely applied. 
+These checks encompass three related areas: clinician–AI collaboration, transparency, and monitoring (Figure 2).
 
 
 
@@ -51,8 +59,10 @@ https://scholar.google.com/scholar_lookup?hl=en&volume=5&publication_year=2022&p
 Transparency
 Transparency is a major challenge in evaluating
 the generalization behavior of AI algorithms in 
-medical imaging. Scientific, peer-reviewed evidence of efficacy is lacking for most commercially available AI products.38 Many published
-reports on FDA-cleared devices omit information on sample size, demographic characteristics
+medical imaging. Scientific, peer-reviewed evidence of efficacy is lacking 
+for most commercially available AI products.38 
+Many published reports on FDA-cleared devices omit information on sample size, 
+demographic characteristics
 of patients, and specifications of the equipment
 used to acquire the images to be interpreted. In
 addition, only a fraction of device studies offer
@@ -60,7 +70,8 @@ data on the specific demographic subgroups
 used during algorithm training, as well as the
 diagnostic performance of these algorithms
 when applied to patients from underrepresented
-demographic subgroups. This lack of information makes it difficult to determine the generalizability of AI and machine-learning algorithms
+demographic subgroups. This lack of information makes it difficult 
+to determine the generalizability of AI and machine-learning algorithms
 across different patient populations.
 
 
@@ -76,11 +87,15 @@ Postdeployment Monitoring
 
 Continuous monitoring of model performance
 and proactive measures to address data set shifts
-over time can improve the accuracy and reliability of AI models in medical-imaging interpretation. Regular updates of the training data and
+over time can improve the accuracy and reliability of 
+AI models in medical-imaging interpretation. 
+Regular updates of the training data and
 retraining of the model on new data through
-continual learning can help maintain model performance over time.78 In addition, incorporating
+continual learning can help maintain model performance over time.78 
+In addition, incorporating
 feedback from clinicians can help improve the
-performance of the model by providing realworld insights and identifying areas for improvement. Ultimately, postdeployment monitoring is essential to ensure that AI models remain
+performance of the model by providing realworld insights and 
+identifying areas for improvement. Ultimately, postdeployment monitoring is essential to ensure that AI models remain
 effective and reliable in clinical settings.79,80
 
 
@@ -97,8 +112,6 @@ March 17, 2022 (http://arxiv.org/abs/2202.02833). preprint.
 80. Pianykh OS, Langs G, Dewey M, et al.
 Continuous learning AI in radiology: implementation principles and early applications. 
 Radiology 2020;297:6-14.
-
-
 
 
 
