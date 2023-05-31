@@ -39,8 +39,11 @@ dependencies:
     - jupyter
     - seaborn 
     - scikit-image
+    - nibabel
     - pillow
     - datasets
     - diffusers
     - torchmetrics
     - monai
+    - accelerate
+    - torch-fidelity
