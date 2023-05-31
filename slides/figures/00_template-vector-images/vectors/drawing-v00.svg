@@ -46,8 +46,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.53168651"
-     inkscape:cx="284.94234"
-     inkscape:cy="301.86961"
+     inkscape:cx="284.00194"
+     inkscape:cy="604.67963"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -117,14 +117,14 @@
        xml:space="preserve" />
     <text
        id="text844"
-       y="186.53246"
-       x="12.97403"
+       y="157.17383"
+       x="40.034321"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:20.4905px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.106721"
        xml:space="preserve"><tspan
          id="tspan842"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:46.3621px;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;stroke-width:0.106721"
-         y="186.53246"
-         x="12.97403"
+         y="157.17383"
+         x="40.034321"
          sodipodi:role="line">A</tspan></text>
     <text
        xml:space="preserve"
@@ -139,14 +139,14 @@
          id="tspan848">B</tspan></text>
     <text
        id="text871"
-       y="290.82962"
-       x="2.7958148"
+       y="218.71204"
+       x="20.043608"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:7.11205px;line-height:1.25;font-family:Ubuntu;-inkscape-font-specification:Ubuntu;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.0370419"
        xml:space="preserve"><tspan
          id="tspan869"
          style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:16.0919px;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Medium';stroke-width:0.0370419"
-         y="290.82962"
-         x="2.7958148"
+         y="218.71204"
+         x="20.043608"
          sodipodi:role="line"><tspan
            id="tspan867"
            style="font-style:italic;font-variant:normal;font-weight:300;font-stretch:normal;font-family:Ubuntu;-inkscape-font-specification:'Ubuntu Light Italic';stroke-width:0.0370419">Description for Routine Mode</tspan></tspan></text>
