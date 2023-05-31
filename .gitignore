@@ -11,6 +11,9 @@
 ## .ipynb_checkpoints/
 **/.ipynb_checkpoints
 
+## ignore training checkpoints
+**/*.pth
+
 ## ignores vim temporal files
 **/*.swp
 
