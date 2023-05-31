@@ -13,6 +13,4 @@ pip install torchvision
 pip install scikit-image
 pip install tqdm
 pip install wandb
-pip install diffusers==0.12.1
-pip install monai
 pip install torchmetrics[image]
