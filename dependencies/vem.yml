@@ -1,0 +1,26 @@
+name: medisynVE
+channels:
+  - conda-forge
+dependencies:
+  - pip
+  - pip:
+    - torch
+    - torchvision
+    - open-clip-torch
+    - numpy
+    - matplotlib
+    - opencv-python
+    - wandb
+    - tqdm
+    - notebook
+    - jupyter
+    - seaborn 
+    - scikit-image
+    - nibabel
+    - pillow
+    - datasets
+    - diffusers
+    - torchmetrics
+    - monai
+    - accelerate
+    - torch-fidelity

@@ -2,6 +2,10 @@
 ## pycharm project path
 .idea
 
+
+## others
+**/*sr_gan_loss.csv
+
 ## ignore datapaths 
 **/data/experiments
 
