@@ -12,7 +12,7 @@ To setup up Myriad and run your jobs just follow the following steps
 1. Make sure you can log in on the command line using `ssh ucaXXXX@myriad.rc.ucl.ac.uk` where ucaXXXX is your UCL username. Then use `exit` to log out.
 ![fig](fig1.png)
 
-2. Transfer the dataset and files onto Myriad cluster. Go the the path where your files and type
+2. From a seperate terminal, transfer the dataset and files onto Myriad cluster. Go the the path where your files and type
 ```
 scp FETAL_PLANES_ZENODO.zip ucaXXXX@myriad.rc.ucl.ac.uk:~/Scratch/
 scp loading_modules.sh trainSimpleModel.qsub.sh simple_model.py ucaXXXX@myriad.rc.ucl.ac.uk:~/Scratch/
