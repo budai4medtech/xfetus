@@ -40,6 +40,17 @@ scp vem.yml ucaXXXX@myriad.rc.ucl.ac.uk:~/Scratch/
 conda env create -f vem.yml
 ```
 
+3.2.2.1. Alternatively, you create virtual env as follows
+```
+# Create a new python virtual environment
+python -m venv .
+# Activate the new environment
+source bin/activate
+pip install torch torchvision open-clip-torch numpy matplotlib opencv-python wandb
+pip install tqdm notebook jupyter seaborn scikit-image nibabel pillow datasets diffusers
+pip install torchmetrics monai accelerate torch-fidelity
+```
+
 4. Submit, queue up, your job in the cluster
 ```
 qsub trainSimpleModel.qsub.sh 
