@@ -9,7 +9,7 @@ See more details here https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/
 ## Steps to run your AI pipeline in Myriad cluster
 To setup up Myriad and run your jobs just follow the following steps
 0. You might not be connected by UCL network to which you need to run [Connecting to the UCL VPN with Linux](https://www.ucl.ac.uk/isd/how-to/connecting-to-ucl-vpn-linux).
-1. Make sure you can log in on the command line using `ssh ucaXXXX@myriad.rc.ucl.ac.uk` where ucXXXX is your UCL username. Then use `exit` to log out.
+1. Make sure you can log in on the command line using `ssh ucaXXXX@myriad.rc.ucl.ac.uk` where ucaXXXX is your UCL username. Then use `exit` to log out.
 ![fig](fig1.png)
 
 2. Transfer the dataset and files onto Myriad cluster. Go the the path where your files and type
@@ -28,7 +28,8 @@ unzip FETAL_PLANES_ZENODO.zip
 ```
 source loading_modules.sh #REF1  
 ```
-3.2 Create conda virtual environments 
+3.2 Create conda virtual environments
+ 
 3.2.1 Open a new terminal to copy virtual environment
 ```
 cd medisynth/dependencies
