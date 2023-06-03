@@ -7,15 +7,16 @@ You need to have an UCL account to which you need to apply for a Myriad accounts
 See more details here https://www.rc.ucl.ac.uk/docs/Clusters/Myriad/
 
 ## Steps to run your AI pipeline in Myriad cluster
-To setup up Myriad and run your jobs just follow the following steps
-0. You might not be connected by UCL network to which you need to conect to the UCL VPN for your OS:
+To setup up Myriad and run your jobs just follow the following steps.   
+
+1. You might not be connected by UCL network to which you need to conect to the UCL VPN for your OS:
   * [Linux](https://www.ucl.ac.uk/isd/how-to/connecting-to-ucl-vpn-linux),
   * [Windows, macOS, etc](https://www.ucl.ac.uk/isd/services/get-connected/ucl-virtual-private-network-vpn)
 
 2. Make sure you can log in on the command line using `ssh ucaXXXX@myriad.rc.ucl.ac.uk` where ucaXXXX is your UCL username. Then use `exit` to log out.
 ![fig](fig1.png)
 
-2. From a separate terminal, transfer the dataset and files onto Myriad cluster. Go the the path where your files and type
+3. From a separate terminal, transfer the dataset and files onto Myriad cluster. Go the the path where your files and type
 ```
 scp FETAL_PLANES_ZENODO.zip ucaXXXX@myriad.rc.ucl.ac.uk:~/Scratch/
 ```
@@ -24,29 +25,29 @@ Alternatively, you can download the dataset in your preferred path in the Myriad
 wget https://zenodo.org/record/3904280/files/FETAL_PLANES_ZENODO.zip 
 ```
 
-2.1 Then unzip FETAL_PLANES_ZENODO.zip in the scratch directory
+3.1 Then unzip FETAL_PLANES_ZENODO.zip in the scratch directory
 ```
 unzip FETAL_PLANES_ZENODO.zip
 ```
 
-3. Clone repo in Myriad cluster and run lines
+4. Clone repo in Myriad cluster and run lines
 ```
 git clone git@github.com:mxochicale/medisynth.git
 ```
 
-3.1 Load modules 
+4.1 Load modules 
 ```
 cd medisynth/notebooks/myriad-guidelines/
 source loading_modules.sh #REF1  
 ```
-3.2 Create conda virtual environments
+4.2 Create conda virtual environments
  
-3.2.1 Open a new terminal to copy virtual environment
+4.2.1 Open a new terminal to copy virtual environment
 ```
 cd medisynth/dependencies
 ```
 
-3.2.2. Create your python virtual env as follows
+4.2.2. Create your python virtual env as follows
 ```
 # Create a new python virtual environment
 python -m venv .
@@ -57,17 +58,17 @@ pip install tqdm notebook jupyter seaborn scikit-image nibabel pillow datasets d
 pip install torchmetrics monai accelerate torch-fidelity
 ```
 
-3.2.2.1 Alternatively, you can create conda env. This will take some 30 minutes to grab dependencies 
+4.2.2.1 Alternatively, you can create conda env. This will take some 30 minutes to grab dependencies 
 ```
 conda env create -f vem.yml
 ```
 
-4. Submit, queue up, your job in the cluster
+5. Submit, queue up, your job in the cluster
 ```
 qsub trainSimpleModel.qsub.sh 
 ```
 
-5. To check if your job has been correctly queued use:
+6. To check if your job has been correctly queued use:
 ```
 qstat
 ```
@@ -85,8 +86,8 @@ The state column tells you if you job is running.
 If it is set to 'qw', it is waiting in the queue.  
 If it is set to 'r', it is running.
 
-## Other commands
-You can check both quotas on Myriad by running:
+## Other useful commands 
+* You can check both quotas on Myriad by running:
 ```
 lquota
 ```
