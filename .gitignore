@@ -2,6 +2,15 @@
 ## pycharm project path
 .idea
 
+## images
+**/RealUnaugmented*.png
+**/Fake*.png
+
+## models
+**/SRGAN_D*
+**/SRGAN_G*
+**/SRGAN_optimiserD*
+**/SRGAN_optimiserG*
 
 ## others
 **/*sr_gan_loss.csv
