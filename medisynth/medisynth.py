@@ -2,6 +2,7 @@ import os
 
 import pandas as pd
 from skimage import io
+from skimage.transform import resize
 from torch.utils.data import Dataset
 
 
@@ -13,7 +14,8 @@ class FetalPlaneDataset(Dataset):
                  brain_plane=None,
                  us_machine=None,
                  operator_number=None,
-                 transform=None
+                 transform=None,
+                 train=None
                  ):
         """
         Args:
@@ -24,6 +26,7 @@ class FetalPlaneDataset(Dataset):
             brain_plane: 'Trans-ventricular'; 'Trans-thalamic'; 'Trans-cerebellum'
             us_machine: 'Voluson E6';'Voluson S10'
             operator_number: 'Op. 1'; 'Op. 2'; 'Op. 3';'Other'
+            train: Flag denotes if test or train data is used
             
         return image
         """
@@ -37,12 +40,19 @@ class FetalPlaneDataset(Dataset):
         if operator_number is not None:
             self.ref = self.ref[self.ref['Operator'] == operator_number]
 
+        size = 256  # Limit dataset size to 256 images (for training)
+        if train:
+            self.ref = self.ref[:size]
+        else:
+            self.ref = self.ref[size:]
+
         self.transform = transform
 
     def __len__(self):
         return len(self.ref)
 
     def __getitem__(self, idx):
+        # Load the image from file
 
         # print(f'idx: {idx} \n')
         # print(f'self.ref.iloc[idx, 0]: {self.ref.iloc[idx, 0]} \n')
@@ -50,13 +60,21 @@ class FetalPlaneDataset(Dataset):
         img_name = os.path.join(self.root_dir,
                                 self.ref.iloc[idx, 0] + '.png')
         # print(img_name)
-
-        image = io.imread(img_name)
+        image = io.imread(img_name)  # <class 'numpy.ndarray'>
 
         # print(type(image))
         # print(image.dtype)
 
+        # Preprocess and augment the image
         if self.transform:
             image = self.transform(image)
 
-        return image
+        ## Make a half sized image for SRGAN
+        downsampling = 2
+        ds_image = resize(
+            image.cpu().numpy(),
+            (image.shape[0], image.shape[1] / downsampling, image.shape[2] / downsampling)
+        )
+        # .cpu().numpy()#TypeError: Cannot interpret 'torch.float32' as a data type
+
+        return ds_image, image
