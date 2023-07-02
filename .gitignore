@@ -47,3 +47,9 @@
 **/*.blg
 **/*.out
 **/comment.cut
+
+
+# Distribution / packaging
+build/
+dist/
+*.egg-info/
