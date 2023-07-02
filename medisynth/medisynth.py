@@ -15,7 +15,8 @@ class FetalPlaneDataset(Dataset):
                  us_machine=None,
                  operator_number=None,
                  transform=None,
-                 train=None
+                 train=None,
+                 train_size=100
                  ):
         """
         Args:
@@ -27,9 +28,11 @@ class FetalPlaneDataset(Dataset):
             us_machine: 'Voluson E6';'Voluson S10'
             operator_number: 'Op. 1'; 'Op. 2'; 'Op. 3';'Other'
             train: Flag denotes if test or train data is used
+            train_size:  Limit dataset size to 100 images (for training)
             
         return image
         """
+        self.transform = transform
         self.root_dir = root_dir
         self.ref = pd.read_csv(ref, sep=';')
         self.ref = self.ref[self.ref['Plane'] == plane]
@@ -40,13 +43,12 @@ class FetalPlaneDataset(Dataset):
         if operator_number is not None:
             self.ref = self.ref[self.ref['Operator'] == operator_number]
 
-        size = 256  # Limit dataset size to 256 images (for training)
+        self.train_size = train_size
         if train:
-            self.ref = self.ref[:size]
+            self.ref = self.ref[:self.train_size]
         else:
-            self.ref = self.ref[size:]
+            self.ref = self.ref[self.train_size:]
 
-        self.transform = transform
 
     def __len__(self):
         return len(self.ref)
@@ -77,4 +79,4 @@ class FetalPlaneDataset(Dataset):
         )
         # .cpu().numpy()#TypeError: Cannot interpret 'torch.float32' as a data type
 
-        return ds_image, image
+        return image, ds_image
