@@ -16,7 +16,8 @@ class FetalPlaneDataset(Dataset):
                  operator_number=None,
                  transform=None,
                  train=None,
-                 train_size=100
+                 train_size=100,
+                 downsampling_factor=2
                  ):
         """
         Args:
@@ -33,6 +34,7 @@ class FetalPlaneDataset(Dataset):
         return image
         """
         self.transform = transform
+        self.downsampling_factor = downsampling_factor
         self.root_dir = root_dir
         self.ref = pd.read_csv(ref, sep=';')
         self.ref = self.ref[self.ref['Plane'] == plane]
@@ -72,10 +74,9 @@ class FetalPlaneDataset(Dataset):
             image = self.transform(image)
 
         ## Make a half sized image for SRGAN
-        downsampling = 2
         ds_image = resize(
             image.cpu().numpy(),
-            (image.shape[0], image.shape[1] / downsampling, image.shape[2] / downsampling)
+            (image.shape[0], image.shape[1] / self.downsampling_factor, image.shape[2] / self.downsampling_factor)
         )
         # .cpu().numpy()#TypeError: Cannot interpret 'torch.float32' as a data type
 
