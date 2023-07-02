@@ -1,6 +1,14 @@
 # medisynth
+[![PyPI version](https://badge.fury.io/py/medisynth.svg)](https://badge.fury.io/py/medisynth)
 
 A library for ultrasound fetal brain imaging using techniques from diffusion models
+
+
+## Install
+
+```bash
+$ pip install medisynth
+```
 
 ## Slides
 Good practices in AI/ML for Ultrasound Fetal Brain Imaging Synthesis   
