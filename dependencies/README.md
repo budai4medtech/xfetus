@@ -1,14 +1,26 @@
 # Creating virtual environments
 
 ## Conda
-Install [conda](https://github.com/mxochicale/code/tree/main/conda) and create [ve.yml](ve.yml).
+Install [mamba](https://github.com/mxochicale/code/tree/main/mamba) 
+
+## Create virtual environment
+### mamba
+```
+mamba update -n base mamba
+mamba create -n VE python=3.8 pip -c conda-forge
+mamba activate VE
+```
+
+### conda
+* [ve.yml](ve.yml)
+
 
 ## Dependencies
 
 * Python package versions
 ```
 $ cd $HOME/.../dependencies
-$ conda activate ve
+$ mamba activate ve
 $ python package_versions.py 
 
 
