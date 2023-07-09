@@ -1,20 +1,20 @@
 ## USAGE
 ## cd ../dependencies
-## conda update -n base -c defaults conda  ## UPDATE CONDA
-## conda list -n *VE # show list of installed packages
-## conda env create -f *ve.yml   		    ## INSTALL
-## conda env update -f *ve.yml --prune  	## UPDATE
-## conda activate *VE			    ## ACTIVATE
-## conda remove -n *VE --all   ## REMOVE
+## mamba update -n base mamba
+## mamba list -n *VE # show list of installed packages
+## mamba env create -f *ve.yml   		    ## INSTALL
+## mamba env update -f *ve.yml --prune  	## UPDATE
+## mamba activate *VE			    ## ACTIVATE
+## mamba remove -n *VE --all   ## REMOVE
 
 ## QUICK TEST OF THE AVAILABILITY OF CUDA
-## conda activate *VE
+## mamba activate *VE
 ## python
 ## import torch
 ## torch.cuda.is_available()
 ##
 ## Alternatively
-## conda activate *VE
+## mamba activate *VE
 ## python packages_versions.py
 
 name: medisynVE

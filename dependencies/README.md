@@ -1,21 +1,42 @@
 # Creating virtual environments
 
-## Conda
+## Install mamba
 Install [mamba](https://github.com/mxochicale/code/tree/main/mamba) 
 
 ## Create virtual environment
-### mamba
+### simple env
 ```
 mamba update -n base mamba
-mamba create -n VE python=3.8 pip -c conda-forge
-mamba activate VE
+mamba create -n medisynthVE python=3.8 pip -c conda-forge
+mamba activate medishynthVE
 ```
 
-### conda
+### all dependencies mamba env 
 * [ve.yml](ve.yml)
 
 
-## Dependencies
+```
+mamba env create -f ve.yml
+
+  Summary:
+  Install: 102 packages
+  Total download: 4GB
+
+...
+
+mkl                                                209.3MB @ 538.3kB/s 1m:43.2s
+cudatoolkit                                        872.0MB @   1.8MB/s 7m:54.6s
+pytorch                                              1.5GB @   2.8MB/s 8m:58.7s
+
+...
+
+
+
+
+
+```
+
+## Check dependencies
 
 * Python package versions
 ```
@@ -24,13 +45,13 @@ $ mamba activate ve
 $ python package_versions.py 
 
 
-python: 3.11.3 | packaged by conda-forge | (main, Apr  6 2023, 08:57:19) [GCC 11.3.0]
+python: 3.11.4 | packaged by conda-forge | (main, Jun 10 2023, 18:08:17) [GCC 12.2.0]
 torch: 2.0.1
 torchvision: 0.15.2
 torch cuda_is_available: True
 torch cuda version: 11.8
 torch cuda.device_count  1
-PIL: 9.5.0
+PIL: 10.0.0
 
 
 ```
