@@ -31,7 +31,7 @@ The resources to reproduce the work of this talk are available at https://github
 * Generate your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) (or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md))
 * Clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
 ```
-cd && mkdir -p $HOME/repositories/$USERNAME && cd  $HOME/repositories/$USERNAME
+cd && mkdir -p $HOME/repositories/budai4medtech && cd  $HOME/repositories/budai4medtech
 git clone git@github.com:budai4medtech/medisynth.git
 ```
 
