@@ -25,14 +25,14 @@ However there are few public ultrasound fetal imaging datasets due to insufficie
 To address such challenges in Ultrasound Medical Imaging, Miguel will discuss two proposed generative adversarial networks (GAN)-based models: diffusion-super-resolution-GAN and transformer-based-GAN, to synthesise images of fetal Ultrasound brain image planes from one public dataset.
 Similarly, Miguel will present and discuss AI and ML workflow aligned to good ML practices by FDA, and methods for quality image assessment (e.g., visual Turing test and FID scores).
 Finally, a simple prototype in GitHub, google-colabs and guidelines to train it using Myriad cluster will be presented as well as applications for Medical Image Synthesis e.g., classification, augmentation, segmentation, registration and other downstream tasks, etc. will be discussed.
-The resources to reproduce the work of this talk are available at https://github.com/mxochicale/medisynth.
+The resources to reproduce the work of this talk are available at https://github.com/budai4medtech/medisynth.
 
 ## Clone repository
 * Generate your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) (or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md))
 * Clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
 ```
 cd && mkdir -p $HOME/repositories/$USERNAME && cd  $HOME/repositories/$USERNAME
-git clone git@github.com:mxochicale/medisynth.git
+git clone git@github.com:budai4medtech/medisynth.git
 ```
 
 
@@ -61,8 +61,8 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 			<sub> <b>Sofia Miñano</b> </sub>        
 		</a>
 		<br />
-			<a href="https://github.com/mxochicale/medisynth/commits?author=sfmig" title="Code">💻</a> 
-			<a href="https://github.com/mxochicale/medisynth/commits?author=sfmig" title="Research">  🔬 🤔  </a>
+			<a href="https://github.com/budai4medtech/medisynth/commits?author=sfmig" title="Code">💻</a> 
+			<a href="https://github.com/budai4medtech/medisynth/commits?author=sfmig" title="Research">  🔬 🤔  </a>
 	</td>
 	<!-- CONTRIBUTOR -->
 	<td align="center">
@@ -71,18 +71,18 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 			<sub> <b>Harvey Mannering</b> </sub>        
 		</a>
 		<br />
-			<a href="https://github.com/mxochicale/medisynth/commits?author=harveymannering" title="Code">💻</a> 
-			<a href="https://github.com/mxochicale/medisynth/commits?author=harveymannering" title="Research">  🔬 🤔  </a>
+			<a href="https://github.com/budai4medtech/medisynth/commits?author=harveymannering" title="Code">💻</a> 
+			<a href="https://github.com/budai4medtech/medisynth/commits?author=harveymannering" title="Research">  🔬 🤔  </a>
 	</td>
 	<!-- CONTRIBUTOR -->
 	<td align="center">
-		<a href="https://github.com/mxochicale"><img src="https://avatars1.githubusercontent.com/u/11370681?v=4?s=100" width="100px;" alt=""/>
+		<a href="https://github.com/budai4medtech"><img src="https://avatars1.githubusercontent.com/u/11370681?v=4?s=100" width="100px;" alt=""/>
 			<br />
 			<sub><b>Miguel Xochicale</b></sub>          
 			<br />
 		</a>
-			<a href="https://github.com/mxochicale/medisynth/commits?author=mxochicale" title="Code">💻</a> 
-			<a href="ttps://github.com/mxochicale/medisynth/commits?author=mxochicale" title="Documentation">📖  🔧 </a>
+			<a href="https://github.com/budai4medtech/medisynth/commits?author=mxochicale" title="Code">💻</a> 
+			<a href="ttps://github.com/budai4medtech/medisynth/commits?author=mxochicale" title="Documentation">📖  🔧 </a>
 	</td>
   </tr>
 </table>

@@ -32,7 +32,7 @@ unzip FETAL_PLANES_ZENODO.zip
 
 4. Clone repo in Myriad cluster and run lines
 ```
-git clone git@github.com:mxochicale/medisynth.git
+git clone git@github.com:budai4medtech/medisynth.git
 ```
 
 4.1 Load modules 
