@@ -1,4 +1,4 @@
-name: medisynVE
+name: xfetusVE
 channels:
   - conda-forge
 dependencies:

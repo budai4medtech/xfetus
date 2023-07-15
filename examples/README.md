@@ -2,7 +2,7 @@
 
 ## Launch jupyter notebook
 ``` 
-export PYTHONPATH="${PYTHONPATH}:$HOME/repositories/budai4medtech/medisynth"
-mamba activate medisynVE && jupyter notebook --browser=firefox
+export PYTHONPATH="${PYTHONPATH}:$HOME/repositories/budai4medtech/xfetus"
+mamba activate xfetusVE && jupyter notebook --browser=firefox
 ```
 

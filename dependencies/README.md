@@ -7,20 +7,21 @@ Install [mamba](https://github.com/mxochicale/code/tree/main/mamba)
 ### simple env
 ```
 mamba update -n base mamba
-mamba create -n medisynthVE python=3.8 pip -c conda-forge
-mamba activate medishynthVE
+mamba create -n xfetusVE python=3.8 pip -c conda-forge
+mamba activate xfetusVE
 ```
 
 ### all dependencies mamba env 
 * [ve.yml](ve.yml)
 
-
 ```
+mamba update -n base mamba
 mamba env create -f ve.yml
 
   Summary:
-  Install: 102 packages
-  Total download: 4GB
+  Install: 86 packages
+  Total download: 767MB
+
 
 ...
 
@@ -41,7 +42,7 @@ pytorch                                              1.5GB @   2.8MB/s 8m:58.7s
 * Python package versions
 ```
 $ cd $HOME/.../dependencies
-$ mamba activate ve
+$ mamba activate xfetusVE
 $ python package_versions.py 
 
 

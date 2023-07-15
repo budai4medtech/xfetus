@@ -1,12 +1,12 @@
-# medisynth - library for synthesis of ultrasound fetal imaging (:baby: :brain: :robot:) :warning: WIP :warning:
-[![PyPI version](https://badge.fury.io/py/medisynth.svg)](https://badge.fury.io/py/medisynth)
+# xfetus - library for synthesis of ultrasound fetal imaging (:baby: :brain: :robot:) :warning: WIP :warning:
+[![PyPI version](https://badge.fury.io/py/xfetus.svg)](https://badge.fury.io/py/xfetus)
 
-medisynth is a python-based library to syntheses fetal ultrasound images using GAN, transformers and diffusion models.
+xfetus is a python-based library to syntheses fetal ultrasound images using GAN, transformers and diffusion models.
 It also includes methods to quantify the quality of synthesis (FID, PSNR, SSIM, and visual touring tests).
 
 ## Installation
 ```
-$ pip install medisynth
+$ pip install xfetus
 ```
 
 You can develop locally:
@@ -14,7 +14,7 @@ You can develop locally:
 * Clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
 ```
 cd && mkdir -p $HOME/repositories/budai4medtech && cd  $HOME/repositories/budai4medtech
-git clone git@github.com:budai4medtech/medisynth.git
+git clone git@github.com:budai4medtech/xfetus.git
 ```
 
 ## References
@@ -33,7 +33,7 @@ However there are few public ultrasound fetal imaging datasets due to insufficie
 To address such challenges in Ultrasound Medical Imaging, Miguel will discuss two proposed generative adversarial networks (GAN)-based models: diffusion-super-resolution-GAN and transformer-based-GAN, to synthesise images of fetal Ultrasound brain image planes from one public dataset.
 Similarly, Miguel will present and discuss AI and ML workflow aligned to good ML practices by FDA, and methods for quality image assessment (e.g., visual Turing test and FID scores).
 Finally, a simple prototype in GitHub, google-colabs and guidelines to train it using Myriad cluster will be presented as well as applications for Medical Image Synthesis e.g., classification, augmentation, segmentation, registration and other downstream tasks, etc. will be discussed.
-The resources to reproduce the work of this talk are available at https://github.com/budai4medtech/medisynth.
+The resources to reproduce the work of this talk are available at https://github.com/budai4medtech/xfetus.
 
 ### Citations
 BibTeX to cite
@@ -80,8 +80,8 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 			<sub> <b>Sofia Miñano</b> </sub>        
 		</a>
 		<br />
-			<a href="https://github.com/budai4medtech/medisynth/commits?author=sfmig" title="Code">💻</a> 
-			<a href="https://github.com/budai4medtech/medisynth/commits?author=sfmig" title="Research">  🔬 🤔  </a>
+			<a href="https://github.com/budai4medtech/xfetus/commits?author=sfmig" title="Code">💻</a> 
+			<a href="https://github.com/budai4medtech/xfetus/commits?author=sfmig" title="Research">  🔬 🤔  </a>
 	</td>
 	<!-- CONTRIBUTOR -->
 	<td align="center">
@@ -90,8 +90,8 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 			<sub> <b>Harvey Mannering</b> </sub>        
 		</a>
 		<br />
-			<a href="https://github.com/budai4medtech/medisynth/commits?author=harveymannering" title="Code">💻</a> 
-			<a href="https://github.com/budai4medtech/medisynth/commits?author=harveymannering" title="Research">  🔬 🤔  </a>
+			<a href="https://github.com/budai4medtech/xfetus/commits?author=harveymannering" title="Code">💻</a> 
+			<a href="https://github.com/budai4medtech/xfetus/commits?author=harveymannering" title="Research">  🔬 🤔  </a>
 	</td>
 	<!-- CONTRIBUTOR -->
 	<td align="center">
@@ -100,8 +100,8 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 			<sub><b>Miguel Xochicale</b></sub>          
 			<br />
 		</a>
-			<a href="https://github.com/budai4medtech/medisynth/commits?author=mxochicale" title="Code">💻</a> 
-			<a href="ttps://github.com/budai4medtech/medisynth/commits?author=mxochicale" title="Documentation">📖  🔧 </a>
+			<a href="https://github.com/budai4medtech/xfetus/commits?author=mxochicale" title="Code">💻</a> 
+			<a href="ttps://github.com/budai4medtech/xfetus/commits?author=mxochicale" title="Documentation">📖  🔧 </a>
 	</td>
   </tr>
 </table>

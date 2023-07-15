@@ -32,19 +32,19 @@ unzip FETAL_PLANES_ZENODO.zip
 
 4. Clone repo in Myriad cluster and run lines
 ```
-git clone git@github.com:budai4medtech/medisynth.git
+git clone git@github.com:budai4medtech/xfetus.git
 ```
 
 4.1 Load modules 
 ```
-cd medisynth/notebooks/myriad-guidelines/
+cd xfetus/examples/myriad-guidelines/
 source loading_modules.sh #REF1  
 ```
 4.2 Create conda virtual environments
  
 4.2.1 Open a new terminal to copy virtual environment
 ```
-cd medisynth/dependencies
+cd xfetus/dependencies
 ```
 
 4.2.2. Create your python virtual env as follows
@@ -60,7 +60,7 @@ pip install torchmetrics monai accelerate torch-fidelity
 
 4.2.2.1 Alternatively, you can create conda env. This will take some 30 minutes to grab dependencies 
 ```
-conda env create -f vem.yml
+conda env create -f ve.yml
 ```
 
 5. Submit, queue up, your job in the cluster

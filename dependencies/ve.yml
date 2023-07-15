@@ -17,11 +17,11 @@
 ## mamba activate *VE
 ## python packages_versions.py
 
-name: medisynVE
+name: xfetusVE
 channels:
   - pytorch # https://anaconda.org/pytorch/torchvision
-  - nvidia
   - conda-forge
+  #- nvidia
 dependencies:
   - pytorch
   - torchvision
@@ -37,7 +37,7 @@ dependencies:
     - tqdm
     - notebook
     - jupyter
-    - seaborn 
+    - seaborn
     - scikit-image
     - nibabel
     - pillow
