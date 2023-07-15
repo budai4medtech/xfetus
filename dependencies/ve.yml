@@ -47,3 +47,4 @@ dependencies:
     - monai
     - accelerate
     - torch-fidelity
+    - twine
