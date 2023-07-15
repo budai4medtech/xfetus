@@ -3,7 +3,7 @@ requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "medisynth"
+name = "xfetus"
 description = "Python-based library for Synthesis of Ultrasound Fetal Imaging"
 keywords = ["artificial intelligence", "diffusion models"]
 authors = [
@@ -13,7 +13,7 @@ authors = [
 ]
 maintainers = [
 ]
-version = "0.0.4"
+version = "0.0.5"
 readme = "README.md"
 classifiers=[
 	"Development Status :: 2 - Pre-Alpha",
