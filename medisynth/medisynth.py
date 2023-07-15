@@ -9,7 +9,9 @@ from torch.utils.data import Dataset
 class FetalPlaneDataset(Dataset):
     """Fetal Plane dataset."""
 
-    def __init__(self, root_dir, ref,
+    def __init__(self,
+                 root_dir,
+                 csv_file,
                  plane,
                  brain_plane=None,
                  us_machine=None,
@@ -21,8 +23,8 @@ class FetalPlaneDataset(Dataset):
                  ):
         """
         Args:
-            csv_file (string): Path to the csv file with annotations.
             root_dir (string): Directory with all the images.
+            csv_file (string): Path to the csv file with annotations.
             transform (callable, optional): Optional transform to be applied on a sample.
             plane: 'Fetal brain'; 'Fetal thorax'; 'Maternal cervix'; 'Fetal femur'; 'Fetal thorax'; 'Other'
             brain_plane: 'Trans-ventricular'; 'Trans-thalamic'; 'Trans-cerebellum'
@@ -36,33 +38,34 @@ class FetalPlaneDataset(Dataset):
         self.transform = transform
         self.downsampling_factor = downsampling_factor
         self.root_dir = root_dir
-        self.ref = pd.read_csv(ref, sep=';')
-        self.ref = self.ref[self.ref['Plane'] == plane]
+
+        self.csv_file = pd.read_csv(csv_file, sep=';')
+        self.csv_file = self.csv_file[self.csv_file['Plane'] == plane]
         if plane == 'Fetal brain':
-            self.ref = self.ref[self.ref['Brain_plane'] == brain_plane]
+            self.csv_file = self.csv_file[self.csv_file['Brain_plane'] == brain_plane]
         if us_machine is not None:
-            self.ref = self.ref[self.ref['US_Machine'] == us_machine]
+            self.csv_file = self.csv_file[self.csv_file['US_Machine'] == us_machine]
         if operator_number is not None:
-            self.ref = self.ref[self.ref['Operator'] == operator_number]
+            self.csv_file = self.csv_file[self.csv_file['Operator'] == operator_number]
 
         self.train_size = train_size
         if train:
-            self.ref = self.ref[:self.train_size]
+            self.csv_file = self.csv_file[:self.train_size]
         else:
-            self.ref = self.ref[self.train_size:]
+            self.csv_file = self.csv_file[self.train_size:]
 
 
     def __len__(self):
-        return len(self.ref)
+        return len(self.csv_file)
 
     def __getitem__(self, idx):
         # Load the image from file
 
         # print(f'idx: {idx} \n')
-        # print(f'self.ref.iloc[idx, 0]: {self.ref.iloc[idx, 0]} \n')
+        # print(f'self.csv_file.iloc[idx, 0]: {self.csv_file.iloc[idx, 0]} \n')
 
         img_name = os.path.join(self.root_dir,
-                                self.ref.iloc[idx, 0] + '.png')
+                                self.csv_file.iloc[idx, 0] + '.png')
         # print(img_name)
         image = io.imread(img_name)  # <class 'numpy.ndarray'>
 
