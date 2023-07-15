@@ -113,3 +113,16 @@ $ tree -fs
 
 5 directories, 451 files
 ```
+
+### Puting images into one path
+
+```
+cd $HOME/repositories/datasets/african-fetal-us-dataset
+mkdir Images
+cp Algeria/*.png Images/
+cp Egypt/*.png Images/
+cp Ghana/*.png Images/
+cp Malawi/*.png Images/
+cp Uganda/*.png Images/
+```
+
