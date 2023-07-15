@@ -66,7 +66,7 @@ Uganda: 600 x 500 pixel size
 $ tree -fs
 [       4096]  .
 ├── [      20901]  ./African_planes_database.csv
-├── [       4096]  ./Algeria
+├── [       4096]  ./Algeria #100files
 │   ├── [     123066]  ./Algeria/patient001_DZA_plane0.png
 │   ├── [     124184]  ./Algeria/patient001_DZA_plane1.png
 │   ├── [     101800]  ./Algeria/patient001_DZA_plane2.png
@@ -75,7 +75,7 @@ $ tree -fs
 ...
 
 
-├── [       4096]  ./Egypt
+├── [       4096]  ./Egypt #100files
 │   ├── [     249784]  ./Egypt/patient001_EGY_plane0.png
 │   ├── [     252127]  ./Egypt/patient001_EGY_plane1.png
 │   ├── [     217399]  ./Egypt/patient001_EGY_plane2.png
@@ -85,7 +85,7 @@ $ tree -fs
 ...
 
 
-├── [       4096]  ./Ghana
+├── [       4096]  ./Ghana #75files
 │   ├── [      77436]  ./Ghana/patient002_GHA_plane0.png
 │   ├── [      85276]  ./Ghana/patient002_GHA_plane1.png
 │   ├── [      71120]  ./Ghana/patient002_GHA_plane2.png
@@ -94,7 +94,7 @@ $ tree -fs
 
 ...
 
-├── [       4096]  ./Malawi
+├── [       4096]  ./Malawi #100files
 │   ├── [      84496]  ./Malawi/patient001_MWI_plane0.png
 │   ├── [      88862]  ./Malawi/patient001_MWI_plane1.png
 │   ├── [      82054]  ./Malawi/patient001_MWI_plane2.png
@@ -103,7 +103,7 @@ $ tree -fs
 
 ...
 
-└── [       4096]  ./Uganda
+└── [       4096]  ./Uganda #75files
     ├── [     124477]  ./Uganda/patient018_UGA_plane0.png
     ├── [     124053]  ./Uganda/patient018_UGA_plane1.png
     ├── [     114293]  ./Uganda/patient018_UGA_plane2.png
