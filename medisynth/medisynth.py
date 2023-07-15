@@ -75,7 +75,7 @@ class FetalPlaneDataset(Dataset):
         if self.transform:
             image = self.transform(image)
 
-        ## Make a half sized image for SRGAN
+        ## Downsample image for SRGAN
         ds_image = resize(
             image.cpu().numpy(),
             (image.shape[0], image.shape[1] / self.downsampling_factor, image.shape[2] / self.downsampling_factor)
@@ -124,8 +124,6 @@ class AfricanFetalPlaneDataset(Dataset):
         if self.country is not None:
             self.csv_file = self.csv_file[self.csv_file['Center'] == self.country]
 
-        # print(self.csv_file)
-
         if train:
             self.csv_file = self.csv_file[:self.train_size]
         else:
@@ -135,24 +133,22 @@ class AfricanFetalPlaneDataset(Dataset):
         return len(self.csv_file)
 
     def __getitem__(self, idx):
-        # Load the image from file
+        # Load the random image from file
 
         # print(f'idx: {idx} \n')
         # print(f'self.csv_file.iloc[idx, 4]: {self.csv_file.iloc[idx, 4]} \n')#Filename
 
         img_name = os.path.join(self.root_dir,
-                                self.csv_file.iloc[idx, 4] + '.png')
-        # print(img_name)
+                                self.csv_file.iloc[idx, 4] + '.png') #Filename
         image = io.imread(img_name)  # <class 'numpy.ndarray'>
 
         # print(type(image))
         # print(image.dtype)
 
-        # Preprocess and augment the image
         if self.transform:
             image = self.transform(image)
 
-        ## Make a half sized image for SRGAN
+        ## Downsample image for SRGAN
         ds_image = resize(
             image.cpu().numpy(),
             (image.shape[0], image.shape[1] / self.downsampling_factor, image.shape[2] / self.downsampling_factor)
