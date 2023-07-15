@@ -19,9 +19,8 @@ mamba update -n base mamba
 mamba env create -f ve.yml
 
   Summary:
-  Install: 86 packages
-  Total download: 767MB
-
+  Install: 83 packages
+  Total download: 479MB
 
 ...
 
@@ -46,14 +45,14 @@ $ mamba activate xfetusVE
 $ python package_versions.py 
 
 
+
 python: 3.11.4 | packaged by conda-forge | (main, Jun 10 2023, 18:08:17) [GCC 12.2.0]
-torch: 2.0.1
-torchvision: 0.15.2
+torch: 2.0.0.post200
+torchvision: 0.15.2a0+072ec57
 torch cuda_is_available: True
-torch cuda version: 11.8
+torch cuda version: 11.2
 torch cuda.device_count  1
 PIL: 10.0.0
-
 
 ```
 

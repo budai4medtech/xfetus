@@ -19,9 +19,7 @@
 
 name: xfetusVE
 channels:
-  - pytorch # https://anaconda.org/pytorch/torchvision
   - conda-forge
-  #- nvidia
 dependencies:
   - pytorch
   - torchvision
