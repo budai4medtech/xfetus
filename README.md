@@ -1,16 +1,24 @@
-# medisynth
+# medisynth - library for synthesis of ultrasound fetal imaging (:baby: :brain: :robot:) 
 [![PyPI version](https://badge.fury.io/py/medisynth.svg)](https://badge.fury.io/py/medisynth)
 
-A library for ultrasound fetal brain imaging using techniques from diffusion models
+medisynth is a python-based library to syntheses fetal ultrasound images using GAN, transformed and diffusion models.
+It includes methods to quantify the quality of synthesis (FID, PSNR, SSIM, and visual touring tests).
 
-
-## Install
-
-```bash
+## Installation
+```
 $ pip install medisynth
 ```
 
-## Slides
+You can develop locally:
+* Generate your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) (or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md))
+* Clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
+```
+cd && mkdir -p $HOME/repositories/budai4medtech && cd  $HOME/repositories/budai4medtech
+git clone git@github.com:budai4medtech/medisynth.git
+```
+
+## References
+### Presentation
 Good practices in AI/ML for Ultrasound Fetal Brain Imaging Synthesis   
 Harvey Mannering, Sofia Miñano, and Miguel Xochicale      
 
@@ -19,7 +27,7 @@ The deep learning and computer vision Journal Club
 UCL Centre for Advance Research Computing       
 1st of June 2023, 15:00 GMT   
 
-### Abstract
+Abstract
 Medical image datasets for AI and ML methods must be diverse to generalise well unseen data (i.e. diagnoses, diseases, pathologies, scanners, demographics, etc).
 However there are few public ultrasound fetal imaging datasets due to insufficient amounts of clinical data, patient privacy, rare occurrence of abnormalities, and limited experts for data collection and validation.
 To address such challenges in Ultrasound Medical Imaging, Miguel will discuss two proposed generative adversarial networks (GAN)-based models: diffusion-super-resolution-GAN and transformer-based-GAN, to synthesise images of fetal Ultrasound brain image planes from one public dataset.
@@ -27,14 +35,25 @@ Similarly, Miguel will present and discuss AI and ML workflow aligned to good ML
 Finally, a simple prototype in GitHub, google-colabs and guidelines to train it using Myriad cluster will be presented as well as applications for Medical Image Synthesis e.g., classification, augmentation, segmentation, registration and other downstream tasks, etc. will be discussed.
 The resources to reproduce the work of this talk are available at https://github.com/budai4medtech/medisynth.
 
-## Clone repository
-* Generate your SSH keys as suggested [here](https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent) (or [here](https://github.com/mxochicale/tools/blob/main/github/SSH.md))
-* Clone the repository by typing (or copying) the following line in a terminal at your selected path in your machine:
+### Citations
+BibTeX to cite
 ```
-cd && mkdir -p $HOME/repositories/budai4medtech && cd  $HOME/repositories/budai4medtech
-git clone git@github.com:budai4medtech/medisynth.git
-```
-
+@misc{iskandar2023realistic,
+      author={
+      	Michelle Iskandar and 
+      	Harvey Mannering and 
+      	Zhanxiang Sun and 
+      	Jacqueline Matthew and 
+      	Hamideh Kerdegari and 
+      	Laura Peralta and 
+      	Miguel Xochicale},
+      title={Towards Realistic Ultrasound Fetal Brain Imaging Synthesis}, 
+      year={2023},
+      eprint={2304.03941},
+      archivePrefix={arXiv},
+      primaryClass={eess.IV}
+}
+``` 
 
 ## Contributors
 Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en/emoji-key)):  
