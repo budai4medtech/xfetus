@@ -1,3 +1,37 @@
 [build-system]
 requires = ["setuptools"]
 build-backend = "setuptools.build_meta"
+
+[project]
+name = "medisynth"
+description = "Python-based library for Synthesis of Ultrasound Fetal Imaging"
+keywords = ["artificial intelligence", "diffusion models"]
+authors = [
+	{name="Harvey Mannering", email="your@email.com"},
+	{name="Sofía Miñano", email="your@email.com"},
+	{name="Miguel Xochicale", email="your@email.com"},
+]
+version = "0.0.2"
+readme = "README.md"
+classifiers=[
+	"Development Status :: 2 - Pre-Alpha",
+	"Intended Audience :: Developers",
+	"Topic :: Scientific/Engineering :: Artificial Intelligence",
+	"License :: OSI Approved :: MIT License",
+	"Programming Language :: Python :: 3.8",
+]
+license={text="MIT"}
+requires-python = ">=3.11"
+dependencies = [
+	"torch",
+	"notebook",
+	"pandas",
+	"scikit-image",
+]
+
+[project.urls]
+homepage = "https://github.com/budai4medtech/medisynth"
+
+[tool.setuptools.packages.find]
+include=["mediynth"]
+exclude=["data", "dependencies", "event", "examples", "references", "slides"]

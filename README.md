@@ -1,4 +1,4 @@
-# medisynth - library for synthesis of ultrasound fetal imaging (:baby: :brain: :robot:) :warning: WIP!
+# medisynth - library for synthesis of ultrasound fetal imaging (:baby: :brain: :robot:) :warning: WIP :warning:
 [![PyPI version](https://badge.fury.io/py/medisynth.svg)](https://badge.fury.io/py/medisynth)
 
 medisynth is a python-based library to syntheses fetal ultrasound images using GAN, transformers and diffusion models.
