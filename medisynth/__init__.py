@@ -1,1 +1,1 @@
-from medisynth.medisynth import FetalPlaneDataset
+from medisynth.medisynth import FetalPlaneDataset, AfricanFetalPlaneDataset

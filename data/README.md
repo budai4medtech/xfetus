@@ -19,12 +19,10 @@ If you find this dataset useful, please cite:
       year={2020}
     } 
 
-
-
 * Notes
 	* "Fetal brain images are further categorized into the 3 most common fetal brain planes (Trans-thalamic, Trans-cerebellum, Trans-ventricular) to judge fine grain categorization performance."
 
-## path tree 
+### path tree 
 ```
 $ tree -fs
 [       4096]  .
@@ -45,5 +43,86 @@ $ tree -fs
     └── [     206491]  ./Images/Patient01792_Plane6_1_of_1.png
 
 1 directory, 12401 files
+```
+
+## Maternal fetal ultrasound planes from low-resource imaging settings in five African countries (456 items, totalling 55.7 MB)
+> This resource is a dataset of routinely acquired maternal-fetal screening ultrasound images collected in five centers of five countries in Africa (Malawi, Egypt, Uganda, Ghana and Algeria) that is associated to the journal article Sendra-Bacells et al. "Generalisability of fetal ultrasound deep learning models to low-resource imaging settings in five African countries", Scientific Reports. The images correspond to the four most common fetal planes: abdomen, brain, femur and thorax. A CSV file is provided where image filenames are associated to plane types and patient number as well as the partitioning in training and testing splits as used in the associated publication.
+
+https://zenodo.org/record/7540448
+
+### Images details
+
+#### pixel size
+
+The size of images are:
+Algeria: 500 x 430 pixel size
+Egypt: 400 x 450 pixel size
+Ghana: 500 x 500 pixel size
+Malawi: 500 x 400 pixel size
+Uganda: 600 x 500 pixel size
+
+#### path three 
+```
+$ tree -fs
+[       4096]  .
+├── [      20901]  ./African_planes_database.csv
+├── [       4096]  ./Algeria #100files
+│   ├── [     123066]  ./Algeria/patient001_DZA_plane0.png
+│   ├── [     124184]  ./Algeria/patient001_DZA_plane1.png
+│   ├── [     101800]  ./Algeria/patient001_DZA_plane2.png
+│   ├── [     123267]  ./Algeria/patient001_DZA_plane3.png
+
+...
+
+
+├── [       4096]  ./Egypt #100files
+│   ├── [     249784]  ./Egypt/patient001_EGY_plane0.png
+│   ├── [     252127]  ./Egypt/patient001_EGY_plane1.png
+│   ├── [     217399]  ./Egypt/patient001_EGY_plane2.png
+│   ├── [     246891]  ./Egypt/patient001_EGY_plane3.png
+
+
+...
+
+
+├── [       4096]  ./Ghana #75files
+│   ├── [      77436]  ./Ghana/patient002_GHA_plane0.png
+│   ├── [      85276]  ./Ghana/patient002_GHA_plane1.png
+│   ├── [      71120]  ./Ghana/patient002_GHA_plane2.png
+│   ├── [      78345]  ./Ghana/patient003_GHA_plane0.png
+│   ├── [      81361]  ./Ghana/patient003_GHA_plane1.png
+
+...
+
+├── [       4096]  ./Malawi #100files
+│   ├── [      84496]  ./Malawi/patient001_MWI_plane0.png
+│   ├── [      88862]  ./Malawi/patient001_MWI_plane1.png
+│   ├── [      82054]  ./Malawi/patient001_MWI_plane2.png
+│   ├── [      88791]  ./Malawi/patient001_MWI_plane3.png
+│   ├── [      80988]  ./Malawi/patient002_MWI_plane0.png
+
+...
+
+└── [       4096]  ./Uganda #75files
+    ├── [     124477]  ./Uganda/patient018_UGA_plane0.png
+    ├── [     124053]  ./Uganda/patient018_UGA_plane1.png
+    ├── [     114293]  ./Uganda/patient018_UGA_plane2.png
+    ├── [     141476]  ./Uganda/patient022_UGA_plane0.png
+    ├── [     128595]  ./Uganda/patient022_UGA_plane1.png
+
+
+5 directories, 451 files
+```
+
+### Puting images into one path
+
+```
+cd $HOME/repositories/datasets/african-fetal-us-dataset
+mkdir Images
+cp Algeria/*.png Images/
+cp Egypt/*.png Images/
+cp Ghana/*.png Images/
+cp Malawi/*.png Images/
+cp Uganda/*.png Images/
 ```
 
