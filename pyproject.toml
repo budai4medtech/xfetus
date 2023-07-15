@@ -7,9 +7,11 @@ name = "medisynth"
 description = "Python-based library for Synthesis of Ultrasound Fetal Imaging"
 keywords = ["artificial intelligence", "diffusion models"]
 authors = [
+	{name="Miguel Xochicale", email= "your@email.com"},
+]
+maintainers = [
 	{name="Harvey Mannering", email="your@email.com"},
 	{name="Sofía Miñano", email="your@email.com"},
-	{name="Miguel Xochicale", email="your@email.com"},
 ]
 version = "0.0.2"
 readme = "README.md"
