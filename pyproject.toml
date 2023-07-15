@@ -13,7 +13,7 @@ maintainers = [
 	{name="Harvey Mannering", email="your@email.com"},
 	{name="Sofía Miñano", email="your@email.com"},
 ]
-version = "0.0.2"
+version = "0.0.3"
 readme = "README.md"
 classifiers=[
 	"Development Status :: 2 - Pre-Alpha",
