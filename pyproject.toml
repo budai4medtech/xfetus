@@ -9,6 +9,7 @@ keywords = ["artificial intelligence", "diffusion models"]
 authors = [
 	{name="Miguel Xochicale", email= "your0@email.com"},
 	{name="Harvey Mannering", email="your1@email.com"},
+	{name="Zhanxiang (Sean) Sun", email="your1@email.com"},
 	{name="Sofía Miñano", email="your2@email.com"},
 ]
 maintainers = [

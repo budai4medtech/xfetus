@@ -85,6 +85,16 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 	</td>
 	<!-- CONTRIBUTOR -->
 	<td align="center">
+		<a href="https://github.com/seansunn"><img src="https://avatars1.githubusercontent.com/u/91659063?v=4?s=100" width="100px;" alt=""/>
+		<br />
+			<sub> <b>Zhanxiang (Sean) Sun</b> </sub>        
+		</a>
+		<br />
+			<a href="https://github.com/budai4medtech/xfetus/commits?author=seansunn" title="Code">💻</a> 
+			<a href="https://github.com/budai4medtech/xfetus/commits?author=seansunn" title="Research">  🔬 🤔  </a>
+	</td>
+	<!-- CONTRIBUTOR -->
+	<td align="center">
 		<a href="https://github.com/harveymannering"><img src="https://avatars1.githubusercontent.com/u/60523103?v=4?s=100" width="100px;" alt=""/>
 		<br />
 			<sub> <b>Harvey Mannering</b> </sub>        
