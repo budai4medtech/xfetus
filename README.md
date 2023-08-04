@@ -103,6 +103,18 @@ Thanks goes to all these people ([emoji key](https://allcontributors.org/docs/en
 			<a href="https://github.com/budai4medtech/xfetus/commits?author=harveymannering" title="Code">💻</a> 
 			<a href="https://github.com/budai4medtech/xfetus/commits?author=harveymannering" title="Research">  🔬 🤔  </a>
 	</td>
+    <!-- CONTRIBUTOR -->
+	<td align="center">
+		<!-- ADD GITHUB USERNAME AND HASH FOR GITHUB PHOTO -->
+		<a href="https://github.com/michellepi"><img src="https://avatars1.githubusercontent.com/u/57605186?v=4?s=100" width="100px;" alt=""/>
+		<br />
+			<sub> <b>Michelle Iskandar</b> </sub>        
+		</a>
+		<br />
+			<!-- ADD GITHUB REPOSITORY AND PROJECT, TITLE AND EMOJIS -->
+            <a href="https://github.com/budai4medtech/xfetus/commits?author=michellepi" title="Code">💻</a>
+			<a href="https://github.com/budai4medtech/xfetus/commits?author=michellepi" title="Research">  🔬 🤔  </a>
+	</td>
 	<!-- CONTRIBUTOR -->
 	<td align="center">
 		<a href="https://github.com/budai4medtech"><img src="https://avatars1.githubusercontent.com/u/11370681?v=4?s=100" width="100px;" alt=""/>
