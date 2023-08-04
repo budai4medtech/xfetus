@@ -2,9 +2,13 @@
 ## pycharm project path
 .idea
 
-## images
+## images and tensors
 **/RealUnaugmented*.png
 **/Fake*.png
+**/Trans-cerebellum.*
+**/Trans-thalamic.*
+**/Trans-ventricular.*
+**/data.zip
 
 ## models
 **/SRGAN_D*
