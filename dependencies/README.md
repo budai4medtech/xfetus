@@ -91,3 +91,6 @@ GPU 00000000:01:00.0
 ```
 
 
+## conda-build
+mamba install conda-build
+conda skeleton pypi xfetus
