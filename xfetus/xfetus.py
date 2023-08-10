@@ -1,5 +1,5 @@
 import os
-from numpy.random import RandomState
+
 import pandas as pd
 from skimage import io
 from skimage.transform import resize
