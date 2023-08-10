@@ -1,5 +1,5 @@
 import os
-
+from numpy.random import RandomState
 import pandas as pd
 from skimage import io
 from skimage.transform import resize
@@ -17,9 +17,11 @@ class FetalPlaneDataset(Dataset):
                  us_machine=None,
                  operator_number=None,
                  transform=None,
-                 train=None,
+                 split_type=None,
+                 split="train",
                  train_size=100,
-                 downsampling_factor=2
+                 downsampling_factor=2,
+                 return_labels=False
                  ):
         """
         Args:
@@ -30,17 +32,20 @@ class FetalPlaneDataset(Dataset):
             brain_plane: 'Trans-ventricular'; 'Trans-thalamic'; 'Trans-cerebellum'
             us_machine: 'Voluson E6';'Voluson S10'
             operator_number: 'Op. 1'; 'Op. 2'; 'Op. 3';'Other'
-            train: Flag denotes if test or train data is used
+            split_type (string, optional): Method to split dataset, supports "manual", and "csv"
+            split (string): Which partition to return, supports "train", and "valid"
             train_size:  Limit dataset size to 100 images (for training)
+            return_labels: Return the plane of the image 
             
-        return image
+        return image, downsampled_image
         """
         self.transform = transform
         self.downsampling_factor = downsampling_factor
         self.root_dir = root_dir
-
         self.csv_file = pd.read_csv(csv_file, sep=';')
         self.csv_file = self.csv_file[self.csv_file['Plane'] == plane]
+        self.return_labels = return_labels
+
         if plane == 'Fetal brain':
             self.csv_file = self.csv_file[self.csv_file['Brain_plane'] == brain_plane]
         if us_machine is not None:
@@ -49,10 +54,19 @@ class FetalPlaneDataset(Dataset):
             self.csv_file = self.csv_file[self.csv_file['Operator'] == operator_number]
 
         self.train_size = train_size
-        if train:
-            self.csv_file = self.csv_file[:self.train_size]
-        else:
-            self.csv_file = self.csv_file[self.train_size:]
+        
+        # Split data manually
+        if split_type == "manual":
+            if split == "train":
+                self.csv_file = self.csv_file[:self.train_size]
+            elif split == "valid":
+                self.csv_file = self.csv_file[self.train_size:]
+        # Split data according to CSV
+        elif split_type == "csv":
+            if split == "train":
+                self.csv_file = self.csv_file[self.csv_file['Train'] == 1]
+            elif split == "valid":
+                self.csv_file = self.csv_file[self.csv_file['Train'] == 0]
 
     def __len__(self):
         return len(self.csv_file)
@@ -77,12 +91,17 @@ class FetalPlaneDataset(Dataset):
 
         ## Downsample image for SRGAN
         ds_image = resize(
-            image.cpu().numpy(),
+            image,
             (image.shape[0], image.shape[1] / self.downsampling_factor, image.shape[2] / self.downsampling_factor)
         )
         # .cpu().numpy()#TypeError: Cannot interpret 'torch.float32' as a data type
 
-        return image, ds_image
+        # Return labels for classification task
+        if self.return_labels:
+            plane = self.csv_file.iloc[idx, 2]
+            return image, ds_image, plane
+        else:
+            return image, ds_image
 
 
 class AfricanFetalPlaneDataset(Dataset):
@@ -94,9 +113,11 @@ class AfricanFetalPlaneDataset(Dataset):
                  plane=None,
                  country=None,
                  transform=None,
-                 train=None,
+                 split_type=None,
+                 split="Train",
                  train_size=100,
-                 downsampling_factor=2
+                 downsampling_factor=2,
+                 return_labels=False
                  ):
         """
         Args:
@@ -105,9 +126,12 @@ class AfricanFetalPlaneDataset(Dataset):
             plane: 'Fetal brain', 'Fetal abdomen','Fetal femur', 'Fetal thorax'
             country: 'Algeria', 'Egypt', 'Malawi', 'Uganda', 'Ghana'
             transform (callable, optional): Optional transform to be applied on a sample.
+            split_type (string, optional): Method to split dataset, supports "manual", and "csv"
+            split (string): Which partition to return, supports "train", and "valid"
             train: Flag denotes if test or train data is used
             train_size:  Limit dataset size to 100 images (for training)
             downsampling_factor: downsampling image
+            return_labels: Return the plane and country of the image 
 
         return image, downsampled_image
         """
@@ -117,17 +141,25 @@ class AfricanFetalPlaneDataset(Dataset):
         self.plane = plane
         self.country = country
         self.csv_file = pd.read_csv(csv_file, sep=',')
-        self.train_size = train_size
+        self.return_labels = return_labels
 
         if self.plane is not None:
             self.csv_file = self.csv_file[self.csv_file['Plane'] == self.plane]
         if self.country is not None:
             self.csv_file = self.csv_file[self.csv_file['Center'] == self.country]
 
-        if train:
-            self.csv_file = self.csv_file[:self.train_size]
-        else:
-            self.csv_file = self.csv_file[self.train_size:]
+        # Split data manually
+        if split_type == "manual":
+            if split == "train":
+                self.csv_file = self.csv_file[:train_size]
+            elif split == "valid":
+                self.csv_file = self.csv_file[train_size:]
+        # Split data according to CSV
+        elif split_type == "csv":
+            if split == "train":
+                self.csv_file = self.csv_file[self.csv_file['Train'] == 1]
+            elif split == "valid":
+                self.csv_file = self.csv_file[self.csv_file['Train'] == 0]
 
     def __len__(self):
         return len(self.csv_file)
@@ -150,8 +182,14 @@ class AfricanFetalPlaneDataset(Dataset):
 
         ## Downsample image for SRGAN
         ds_image = resize(
-            image.cpu().numpy(),
+            image,
             (image.shape[0], image.shape[1] / self.downsampling_factor, image.shape[2] / self.downsampling_factor)
         )
 
-        return image, ds_image
+        # Return labels for classification task
+        if self.return_labels:
+            plane = self.csv_file.iloc[idx, 1]
+            country = self.csv_file.iloc[idx, 3]
+            return image, ds_image, plane, country
+        else:
+            return image, ds_image
