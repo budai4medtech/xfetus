@@ -128,7 +128,6 @@ class AfricanFetalPlaneDataset(Dataset):
             transform (callable, optional): Optional transform to be applied on a sample.
             split_type (string, optional): Method to split dataset, supports "manual", and "csv"
             split (string): Which partition to return, supports "train", and "valid"
-            train: Flag denotes if test or train data is used
             train_size:  Limit dataset size to 100 images (for training)
             downsampling_factor: downsampling image
             return_labels: Return the plane and country of the image 
