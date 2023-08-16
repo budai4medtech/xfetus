@@ -3,9 +3,10 @@ OS_VERSION:=$(shell lsb_release -a 2>/dev/null | grep Description | awk '{ print
 $(eval $(shell grep VERSION_ID /etc/os-release))
 #ifeq ($(VERSION_ID), 22.04)
 ifeq ($(OS_VERSION), Ubuntu-22.04.1)
-EXPORT_ID = --export-filename
-else
 EXPORT_ID = --export-png
+else
+EXPORT_ID = --export-filename
+
 endif
 # https://stackoverflow.com/questions/714100/os-detecting-makefile
 
